@@ -1,0 +1,72 @@
+ /* Global CSS variabels + overwrite Bootstrap variabels comes here */
+
+ :root {
+  /* gtg-primary colors */
+  --gtg-primary-25: #eef3ef;
+  --gtg-primary-50: #dde7df;
+  --gtg-primary-100: #bbcfbf;
+  --gtg-primary-200: #99b79f;
+  --gtg-primary-300: #779f7f;
+  --gtg-primary-400: #55875f;
+  --gtg-primary-500: #4d7a56;
+  --gtg-primary-600: #446c4c;
+  --gtg-primary-700: #3b5f43;
+  --gtg-primary-800: #335139;
+  --gtg-primary-900: #2b4430;
+  --gtg-primary-950: #223626;
+
+  /* gtg-secondary colors */
+  --gtg-secondary-25: #fdfbee;
+  --gtg-secondary-50: #fbf7dd;
+  --gtg-secondary-100: #f8efbc;
+  --gtg-secondary-200: #f4e89a;
+  --gtg-secondary-300: #f1e079;
+  --gtg-secondary-400: #edd857;
+  --gtg-secondary-500: #d5c24e;
+  --gtg-secondary-600: #bead46;
+  --gtg-secondary-700: #a6973d;
+  --gtg-secondary-800: #8e8234;
+  --gtg-secondary-900: #776c2c;
+  --gtg-secondary-950: #5f5623;
+
+  /* gtg-tertiary colors */
+  --gtg-tertiary-25: #f7f8fc;
+  --gtg-tertiary-50: #eff1f9;
+  --gtg-tertiary-100: #dfe4f3;
+  --gtg-tertiary-200: #ced6ed;
+  --gtg-tertiary-300: #bec9e7;
+  --gtg-tertiary-400: #aebbe1;
+  --gtg-tertiary-500: #9da8cb;
+  --gtg-tertiary-600: #8b96b4;
+  --gtg-tertiary-700: #7a839e;
+  --gtg-tertiary-800: #687087;
+  --gtg-tertiary-900: #575e71;
+  --gtg-tertiary-950: #464b5a;
+
+  /* gtg-slate colors */
+  --gtg-slate-25: #eeefef;
+  --gtg-slate-50: #dde0e0;
+  --gtg-slate-100: #bbc1c1;
+  --gtg-slate-200: #98a1a1;
+  --gtg-slate-300: #768282;
+  --gtg-slate-400: #546363;
+  --gtg-slate-500: #4c5959;
+  --gtg-slate-600: #434f4f;
+  --gtg-slate-700: #3b4545;
+  --gtg-slate-800: #323b3b;
+  --gtg-slate-900: #2a3232;
+  --gtg-slate-950: #222828;
+
+  /* font-sizes */
+
+  --font-size-xlarge: 3rem;
+  --font-size-large: 2rem;
+  --font-size-medium: 1.5rem;
+  --font-size-small: 1.2rem;
+
+  /* image variables */
+
+  --border-radius: 15px;
+    --box-shadow: 0px 5px 15px rgba(0, 40, 60, .17);
+
+ }

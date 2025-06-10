@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Form</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/form.css">
+
+</head>
+
+<body>
+
+<form action="https://it-fact.be/form.php" method="post">
+  <div class="mb-3">
+    <label for="email1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email1" name="email" aria-describedby="emailHelp" required>
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+
+  <div class="mb-3">
+    <label for="password1" class="form-label">Password</label>
+    <input type="password" class="form-control" name="password" id="password1" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="otherSource" class="form-label">Please specify</label>
+    <textarea class="form-control" id="otherSource" rows="3" name="otherSource" placeholder="Tell us more..."></textarea>
+  </div>
+
+  <!-- Radio Buttons Example -->
+  <div class="mb-3">
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+      <label class="form-check-label" for="radioDefault1">
+        Default radio
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+      <label class="form-check-label" for="radioDefault2">
+        Default checked radio
+      </label>
+    </div>
+  </div>
+
+  <!-- Checkbox Buttons Example -->
+  <div class="mb-3">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="checkDefault" value="checkDefault" id="checkDefault">
+      <label class="form-check-label" for="checkDefault">
+        Default checkbox
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="checkChecked" value="checkChecked" id="checkChecked" checked>
+      <label class="form-check-label" for="checkChecked">
+        Checked checkbox
+      </label>
+    </div>
+
+    <!-- Disabled checkboxes -->
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="checkDisabled" disabled>
+      <label class="form-check-label" for="checkDisabled">
+        Disabled checkbox
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="checkCheckedDisabled" checked disabled>
+      <label class="form-check-label" for="checkCheckedDisabled">
+        Disabled checked checkbox
+      </label>
+    </div>
+  </div>
+
+  <!-- Select Buttons Example -->
+  <div class="mb-3">
+    <select class="form-select" name="select" aria-label="Default select example" required>
+      <option value="" selected disabled>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+
+  <button type="submit" value="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+</form>
+
+<!-- JS scripts -->
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

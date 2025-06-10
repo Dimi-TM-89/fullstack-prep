@@ -1,0 +1,25 @@
+:root {
+    --card-bg-color: lightblue;
+    --card-text-color: #333;
+    --card-border-radius: 5px;
+    --card-padding: 10px;
+    --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --card-title-font-size: 1.2rem;
+    --card-title-margin-bottom: 5px;
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    box-shadow: var(--card-shadow);
+
+    .card-title {
+        font-size: var(--card-title-font-size);
+        margin-bottom: var(--card-title-margin-bottom);
+    }
+
+    .card-text {
+        color: var(--card-text-color);
+    }
+}

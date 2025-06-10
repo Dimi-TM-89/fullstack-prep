@@ -1,0 +1,119 @@
+@import "bootstrap.min.css";
+@import "global_vars.css";
+@import "components/card.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+form {
+    /* Bootstrap form variables */
+    --bs-border-color: var(--gtg-primary-100);
+    --bs-border-radius: 8px;
+    --bs-form-bg: var(--gtg-primary-25);
+    --bs-form-control-bg: var(--gtg-primary-50);
+    --bs-form-control-border-color: var(--gtg-primary-100);
+    --bs-form-control-color: var(--gtg-primary-900);
+    --bs-form-control-font-size: 1rem;
+    --bs-form-control-focus-border-color: var(--gtg-primary-300);
+    --bs-form-control-focus-box-shadow: 0 0 0 0.25rem rgba(119, 159, 127, 0.25);
+
+    background-color: var(--bs-form-bg);
+    border: 1px solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    padding: 10px;
+
+    .form-label {
+        color: var(--gtg-primary-900);
+        font-weight: 500;
+    }
+
+    .form-control,
+    .form-select {
+        background-color: var(--bs-form-control-bg);
+        border: 1px solid var(--bs-form-control-border-color);
+        color: var(--bs-form-control-color);
+        font-size: var(--bs-form-control-font-size);
+        padding: 0.5rem 0.75rem;
+        border-radius: 4px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+        &:focus {
+            border-color: var(--bs-form-control-focus-border-color);
+            box-shadow: var(--bs-form-control-focus-box-shadow);
+            outline: none;
+        }
+    }
+
+    /* Bootstrap checkboxes variables */
+    --bs-form-check-bg: var(--gtg-primary-50);
+    --bs-form-check-border: var(--gtg-primary-100);
+    --bs-form-check-border-radius: 0.25rem;
+    --bs-form-check-color: var(--gtg-primary-900);
+    --bs-form-check-focus-ring: 0 0 0 0.25rem rgba(119, 159, 127, 0.25);
+    --bs-form-check-checked-bg: var(--gtg-primary-500);
+    --bs-form-check-checked-border: var(--gtg-primary-500);
+    --bs-form-check-disabled-opacity: 0.5;
+
+
+    .form-check-input {
+        background-color: var(--bs-form-check-bg);
+        border: 1px solid var(--bs-form-check-border);
+        border-radius: var(--bs-form-check-border-radius);
+        width: 1.2em;
+        height: 1.2em;
+        margin-top: 0.25em;
+        vertical-align: middle;
+        appearance: none;
+        transition: all 0.2s ease-in-out;
+
+        &:checked {
+            background-color: var(--bs-form-check-checked-bg);
+            border-color: var(--bs-form-check-checked-border);
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: var(--bs-form-check-focus-ring);
+        }
+
+        &:disabled {
+            opacity: var(--bs-form-check-disabled-opacity);
+            cursor: not-allowed;
+        }
+    }
+
+    .form-check-label {
+        color: var(--bs-form-check-color);
+        margin-left: 0.5em;
+    }
+
+
+    #submitBtn {
+        /* Bootstrap button variables */
+        --bs-btn-bg: var(--gtg-primary-500);
+        --bs-btn-hover-bg: var(--gtg-primary-600);
+        --bs-btn-color: white;
+
+        background-color: var(--bs-btn-bg);
+        border: none;
+        color: var(--bs-btn-color);
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+        padding: 0.5rem 1.5rem;
+        border-radius: 4px;
+
+        &:hover,
+        &:focus {
+            background-color: var(--bs-btn-hover-bg);
+        }
+    }
+}

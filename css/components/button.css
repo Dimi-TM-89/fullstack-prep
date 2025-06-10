@@ -1,0 +1,33 @@
+:root {
+    --btn-padding-y: 10px;
+    --btn-padding-x: 20px;
+    --btn-border-radius: 5px;
+    --btn-bg-color: #f0f0f0;
+    --btn-text-color: #333;
+    --btn-hover-bg-color: #e0e0e0;
+    --btn-primary-bg-color: #3498db;
+    --btn-primary-text-color: white;
+    --btn-primary-hover-bg-color: #2980b9;
+}
+
+.btn {
+    padding: var(--btn-padding-y) var(--btn-padding-x);
+    border: none;
+    border-radius: var(--btn-border-radius);
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--btn-hover-bg-color);
+    }
+
+    &.btn-primary {
+        background-color: var(--btn-primary-bg-color);
+        color: var(--btn-primary-text-color);
+
+        &:hover {
+            background-color: var(--btn-primary-hover-bg-color);
+        }
+    }
+}
