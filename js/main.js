@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
 // ********************************
 // ELEMENT SELECTORS
 // ********************************
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // ********************************
 // FETCH WITH INPUT
 // ********************************
-    listenInput.addEventListener("focus", function () {
+    listenInput.addEventListener("focus", () => {
         const input = input.value.trim();
         if (input === "") return;
 
